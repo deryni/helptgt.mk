@@ -11,7 +11,7 @@ define define_target
     )
 endef
 
-$(call define_target,help,Print help for available make targets,OTHER):
+$(call define_target,help,Print this help for available make targets,OTHER):
 	$(SR_V_AT)printf 'Development targets:\n'
 	$(SR_V_AT)printf '    %s\n' $(DEVTGTS) | column -t -s :
 	$(SR_V_AT)echo
